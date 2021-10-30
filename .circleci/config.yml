@@ -37,7 +37,7 @@ jobs:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
           command: |
-            python3app.py &
+            python3 app.py &
             sleep 5
             python3 test_datetime_service.py
 
